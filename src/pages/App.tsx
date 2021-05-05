@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState } from 'react'
 import {  Route, Switch, Router } from 'react-router-dom'
 import styled from 'styled-components'
-import { Credentials, StringTranslations } from '@crowdin/crowdin-api-client'
+
 import { LangType } from '@pancakeswap-libs/uikit'
 import { createBrowserHistory } from 'history'
 
