@@ -275,7 +275,6 @@ const Swap = () => {
     [onCurrencySelection, checkForWarning]
   )
 
-    console.log('formattedAmounts[Field.OUTPUT]',formattedAmounts[Field.OUTPUT])
   return (
     <Container>
       <TokenWarningModal
