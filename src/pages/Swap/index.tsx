@@ -80,7 +80,10 @@ const Swap = () => {
 
   // swap state
   const { independentField, typedValue, recipient } = useSwapState()
+
   const { v2Trade, currencyBalances, parsedAmount, currencies, inputError: swapInputError } = useDerivedSwapInfo()
+
+
   const { wrapType, execute: onWrap, inputError: wrapInputError } = useWrapCallback(
     currencies[Field.INPUT],
     currencies[Field.OUTPUT],
@@ -272,7 +275,7 @@ const Swap = () => {
     [onCurrencySelection, checkForWarning]
   )
 
-
+    console.log('formattedAmounts[Field.OUTPUT]',formattedAmounts[Field.OUTPUT])
   return (
     <Container>
       <TokenWarningModal
